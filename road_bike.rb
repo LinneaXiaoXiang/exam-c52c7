@@ -15,6 +15,10 @@ class RoadBike
     puts "Lubricating gears..."
   end
 
+  def luggage_price
+    total = luggage[0].price + luggage[1].price
+  end
+
   def luggage
     @luggage
   end

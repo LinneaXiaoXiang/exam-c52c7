@@ -17,6 +17,10 @@ class BmxBike
     puts "Adjusting seat..."
   end
 
+  def luggage_price
+    @tail_pack.price
+  end
+
   def tail_pack
     @tail_pack
   end
