@@ -15,13 +15,10 @@ bikes = [
 ]
 
 total_price = 0
-total_price += bikes[0].weekly_rate
-total_price += bikes[0].luggage_price
-total_price += bikes[1].daily_rate * 7
-total_price += bikes[1].luggage_price
-total_price += bikes[2].weekly_rate
-total_price += bikes[2].luggage_price
-total_price += bikes[3].weekly_rate
-total_price += bikes[3].luggage_price
+
+bikes.each do |bike|
+  total_price += bike.weekly_rate
+  total_price += bike.luggage_price
+end
 
 puts "Total price: #{total_price}"
