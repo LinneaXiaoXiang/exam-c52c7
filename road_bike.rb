@@ -30,4 +30,5 @@ class RoadBike
   def weekly_rate
     daily_rate * 7
   end
+  
 end
